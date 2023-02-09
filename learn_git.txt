@@ -15,3 +15,33 @@ git add [file name]
 git commit -m [message]
 	例如：git commit -m "this file can tell us how to use git"
 	注意：-m后输入的是提交说明，一次commit可以将所有更新提交到仓库
+远程同步：
+1、	在github创建项目
+
+2、	根据提示确定项目
+
+目前已经在本地创建了一个新的库，因此选择将已有的库上传到云端
+拷贝第二个模块的代码即可
+1、	添加远程版本库
+git remote [package short name] [url]
+例如：git remote add origin https://github.com/DCTyxx/learn_git.git
+
+2、	初始化分支
+git branch -M [branch name]
+例如：git branch -M main
+值得注意的是，初始化分支之后，默认分支由master改变为初始化分支main.
+
+3、上传仓库文件
+git push -u [package name] [branch name]
+例如：git push -u origin main
+解读：-u 第一次推送时加上，用于将本地的分支与远程分支关联
+注意：第一次连接要求连接到github
+
+4、更新
+将内容写进learn_git.txt文件中，并更新
+git commit -m “message”
+git push [package name] [branch name]
+例如： git commit -m “update the file”
+git push origin main
+ 
+图9 更新内容并同步远程仓库成功提示
