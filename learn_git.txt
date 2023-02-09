@@ -1,0 +1,17 @@
+创建版本库：
+1、	创建文件夹
+	例如：F:\git_repository
+2、	将文件夹变为可以管理的仓库
+	git init
+3、	创建文件
+	注意：文件必须要在版本库目录下
+	例如：在路径 F:\git_repository 下创建文件 learngit.txt
+	文件可以为txt，网页，代码等（Word格式是二进制文件。git无法检测到变动）
+4、	将文件添加到仓库
+git add [file name]
+	例如：git add learngit.txt
+	注意：可以添加多个文件，没有提示即为成功
+5、	把文件提交到仓库（确认添加文件）
+git commit -m [message]
+	例如：git commit -m "this file can tell us how to use git"
+	注意：-m后输入的是提交说明，一次commit可以将所有更新提交到仓库
